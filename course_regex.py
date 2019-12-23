@@ -16,3 +16,5 @@ course = input("What course are you trying to take? : ").upper().replace(" ", ""
 #course = "".join([char if char != " " else "" for char in course])
 print("Requirements for " + course_dict[course] + ": ")
 print(prereq_dict[course])
+
+#TODO: regex of prereq courses, List for OR's, tuple in list for AND's
