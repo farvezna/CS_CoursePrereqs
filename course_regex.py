@@ -10,8 +10,9 @@ with open('cs_prereqs2018_2.csv') as csv_file:
     for row in reader:
         course_id = row['SUBJECT'] + row['NUMB']
         prereqs = re.findall("(?:[A-Za-z/]*\s*[0-9X]{4}(?:\sor\s)*)+", row['PRE-REQ COURSES'])
-        print(prereqs, end="")
-        print(" : "  + row['NUMB'])
+        #print(prereqs, end="")
+        #print(" : "  + row['NUMB'])                
+        prereqs = [crse.split('or') for crse in [crse_clump.replace(" ","") for crse_clump in prereqs]]
         prereq_dict[course_id] = prereqs
         course_dict[course_id] = row['CRSE TITLE']
 
@@ -20,6 +21,6 @@ with open('cs_prereqs2018_2.csv') as csv_file:
 #print("Requirements for " + course_dict[course] + ": ")
 #print(prereq_dict[course])
 
-#TODO: regex of prereq courses, List for OR's, tuple in list for AND's
+#TODO: splitting OR's in lists to tuple?
 #pprint(prereq_dict)
-#pprint(prereq_dict)
+pprint(prereq_dict)
