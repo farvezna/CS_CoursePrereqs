@@ -24,3 +24,5 @@ with open('cs_prereqs2018_2.csv') as csv_file:
 #TODO: splitting OR's in lists to tuple?
 #pprint(prereq_dict)
 pprint(prereq_dict)
+
+#NOTE: if crse in crse_clump has no subject (i.e. 4249), gets subject of first item in clump
