@@ -16,13 +16,14 @@ with open('cs_prereqs2018_2.csv') as csv_file:
         prereq_dict[course_id] = prereqs
         course_dict[course_id] = row['CRSE TITLE']
 
-#course = input("What course are you trying to take? : ").upper().replace(" ", "")
-#course = "".join([char if char != " " else "" for char in course])
-#print("Requirements for " + course_dict[course] + ": ")
-#print(prereq_dict[course])
+try:
+    course = input("What course are you trying to take? : ").upper().replace(" ", "")
+    print("Requirements for " + course_dict[course] + ": ")
+    print(prereq_dict[course])
+except:
+    print("Incorrect course/course does not exist")
 
-#TODO: splitting OR's in lists to tuple?
 #pprint(prereq_dict)
-pprint(prereq_dict)
+#pprint(prereq_dict)
 
 #NOTE: if crse in crse_clump has no subject (i.e. 4249), gets subject of first item in clump

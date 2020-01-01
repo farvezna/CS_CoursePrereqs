@@ -1,4 +1,5 @@
-from course_regex import *
+from course_regex import prereq_dict, course_dict
 from pprint import pprint
+from treelib import Node, Tree
 
-pprint(prereq_dict)
+tree = Tree()
