@@ -16,8 +16,8 @@ This was mainly a small exercise project to reinforce Python scripting and princ
 
 ## Progress/Improvements
 - [x] Basic parsing of courses and prereqs for lookup
-- [] Handling inconsistent naming cases (i.e. capitalization, lack of subject with course number) in public spreadsheet
-- [] Visualized, interactive tree showing all relationships at once
-- [] Rendering partial tree based on course input
-- [] Tree color-coding to ability to take each course based on current courses student has taken and/or their given Threads
+- [ ] Handling inconsistent naming cases (i.e. capitalization, lack of subject with course number) in public spreadsheet
+- [ ] Visualized, interactive tree showing all relationships at once
+- [ ] Rendering partial tree based on course input
+- [ ] Tree color-coding to ability to take each course based on current courses student has taken and/or their given Threads
 
