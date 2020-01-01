@@ -11,7 +11,7 @@ This was mainly a small exercise project to reinforce Python scripting and princ
 * **Python** - Language for scripts thus far
 * **Regular Expressions** - Used in identifying and extracting course ID's from text based on pattern matching
 * **File I/O** - Converted pdf to csv and parsed data line-by-line to dictionary structures
-* **List Comprehensions** - Pythonic way of concisely (though potentially inefficiently) manipulating and creating lists
+* **List Comprehensions** - Pythonic way of concisely manipulating and creating lists
 * **Git** - first repo to practice use of Git commands
 
 ## Progress/Improvements
